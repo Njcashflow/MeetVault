@@ -1,0 +1,49 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Rich dark metallic glass background -->
+    <linearGradient id="bgGrad" x1="16" y1="16" x2="112" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1B1F2D" />
+      <stop offset="100%" stop-color="#08090E" />
+    </linearGradient>
+
+    <!-- Vibrant Aurora Gradient border -->
+    <linearGradient id="aurora" x1="12" y1="16" x2="116" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <!-- Subtle inner shield fill -->
+    <linearGradient id="shieldFill" x1="64" y1="24" x2="64" y2="106" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Vibrant Audio Bars -->
+    <linearGradient id="barEmerald" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="barCyan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0891B2" />
+    </linearGradient>
+    <linearGradient id="barViolet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+
+  <!-- Modern squircle container with Aurora stroke -->
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#bgGrad)" stroke="url(#aurora)" stroke-width="5" />
+
+  <!-- Crisp high-contrast Vault Shield -->
+  <path d="M64 24L95 38V63C95 83.5 81.5 101 64 107C46.5 101 33 83.5 33 63V38L64 24Z" 
+        stroke="#F4F4F5" stroke-width="5" stroke-linejoin="round" 
+        fill="url(#shieldFill)" />
+
+  <!-- Equalizer Waveform Bars -->
+  <rect x="47" y="52" width="7" height="24" rx="3.5" fill="url(#barEmerald)" />
+  <rect x="60.5" y="40" width="7" height="48" rx="3.5" fill="url(#barCyan)" />
+  <rect x="74" y="50" width="7" height="28" rx="3.5" fill="url(#barViolet)" />
+</svg>

@@ -1,0 +1,25 @@
+{
+  "name": "meetvault",
+  "version": "1.0.0",
+  "description": "Zero-paywall, 100% offline, local Google Meet transcriber with GPU-accelerated HUD and multi-format exports",
+  "type": "module",
+  "scripts": {
+    "build:content": "cross-env BUILD_ENTRY=content vite build",
+    "build:background": "cross-env BUILD_ENTRY=background vite build",
+    "build": "npm run build:content && npm run build:background",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "docx": "^9.2.1",
+    "idb": "^8.0.3",
+    "jspdf": "^4.2.0"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/chrome": "^0.0.312",
+    "@types/node": "^22.13.0",
+    "cross-env": "^10.1.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}

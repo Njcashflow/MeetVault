@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "MeetVault — Zero-Paywall Local Meeting Transcriber",
+  "version": "1.0.0",
+  "description": "100% offline, zero-API Google Meet transcriber with GPU-accelerated HUD and Word/PDF/Markdown exports.",
+  "permissions": [
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*"
+  ],
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["dist/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "MeetVault — Meeting Transcriber",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["gemini-svg.svg", "icons/*", "dist/*"],
+      "matches": ["https://meet.google.com/*"]
+    }
+  ]
+}
