@@ -29,7 +29,7 @@ MeetVault is a lightweight, 100% client-side Chrome extension (Manifest V3) that
 
 1. Clone or download this repository to your local computer:
    ```bash
-   git clone https://github.com/your-username/MeetVault.git
+   git clone https://github.com/Njcashflow/MeetVault.git
    cd MeetVault
    ```
 2. Install project dependencies and compile the extension bundles:
